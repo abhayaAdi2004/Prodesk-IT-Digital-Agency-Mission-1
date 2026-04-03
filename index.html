@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Prodesk IT — Helping businesses grow with modern digital solutions including SEO, web development, and digital marketing." />
+  <title>Prodesk IT — Modern Digital Solutions</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+
+<body class="m-0 font-sans text-white">
+
+  <!-- Navbar (Glassmorphism via glass-nav class) -->
+  <header class="glass-nav fixed top-0 left-0 w-full h-[70px] flex items-center justify-between px-6 md:px-10 z-[1000]" role="banner">
+
+    <!-- Logo -->
+    <div class="flex items-center gap-2.5">
+      <a href="https://prodesk.in/index.html" class="flex items-center gap-2.5 no-underline text-white" aria-label="Prodesk IT Home">
+        <img src="assets/images/Prodesk Logo.png" alt="Prodesk IT company logo" width="60" height="60" class="w-[60px] h-auto md:w-[60px] max-sm:w-[45px]" />
+        <span class="text-lg font-bold">Prodesk IT</span>
+      </a>
+    </div>
+
+    <!-- Hamburger Button (mobile only) -->
+    <button class="hamburger md:hidden" id="hamburgerBtn" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navRight">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+
+    <!-- Navigation (right side) -->
+    <nav class="nav-right" id="navRight" role="navigation" aria-label="Main navigation">
+      <ul class="nav-links list-none flex gap-5">
+        <li><a href="#" class="no-underline text-white hover:text-blue-400 transition-colors duration-300">Home</a></li>
+        <li><a href="#about" class="no-underline text-white hover:text-blue-400 transition-colors duration-300">About</a></li>
+        <li><a href="#services" class="no-underline text-white hover:text-blue-400 transition-colors duration-300">Services</a></li>
+        <li><a href="#footer" class="no-underline text-white hover:text-blue-400 transition-colors duration-300">Contact</a></li>
+      </ul>
+
+      <!-- Dark Mode Toggle -->
+      <div class="flex items-center">
+        <input type="checkbox" id="themeToggle" aria-label="Toggle dark mode" />
+        <label for="themeToggle" class="toggle-switch" aria-hidden="true">
+          <span class="sun">☀️</span>
+          <span class="moon">🌙</span>
+        </label>
+      </div>
+    </nav>
+
+  </header>
+
+  <!-- Main Content -->
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero relative h-screen flex justify-center items-center overflow-hidden" aria-label="Hero banner">
+
+      <!-- Background Video -->
+      <video autoplay muted loop playsinline preload="none" class="absolute top-0 left-0 w-full h-full object-cover -z-10" aria-hidden="true">
+        <source src="assets/videos/hero.mp4" type="video/mp4" />
+      </video>
+
+      <!-- Content -->
+      <div class="relative z-10 flex flex-col items-center text-center px-4">
+        <h1 class="text-4xl md:text-6xl font-bold text-white drop-shadow-lg mb-4">We Build Digital Experiences</h1>
+        <p class="text-lg md:text-xl text-white drop-shadow-md mb-6 max-w-2xl">Helping businesses grow with modern digital solutions.</p>
+        <a href="#services" class="inline-block mt-2 px-8 py-3 bg-blue-600 text-white font-semibold rounded-lg hover:bg-white hover:text-black hover:shadow-xl hover:-translate-y-1 transition-all duration-300 no-underline" role="button">Get Started</a>
+      </div>
+
+    </section>
+
+    <!-- About Us Section -->
+    <section id="about" class="py-16 px-5 bg-white text-gray-800 text-center" aria-label="About Us">
+      <h2 class="about-heading text-3xl font-bold text-gray-900 mb-10">About Us</h2>
+      <div class="max-w-5xl mx-auto text-left">
+        <h3 class="text-2xl font-bold text-center mb-8 text-gray-800 about-subheading">Beyond Consulting. We Are Engineering Partners.</h3>
+        
+        <div class="space-y-8">
+          <!-- Introduction -->
+          <div>
+            <h3 class="text-xl font-semibold mb-3 text-blue-600">Introduction</h3>
+            <p class="text-base text-gray-700 leading-relaxed mb-4">We don't just write code; we build the digital backbone of global enterprises.</p>
+            <p class="text-base text-gray-700 leading-relaxed mb-4">Since 2012, Prodesk IT has evolved from a boutique engineering firm into a global technology powerhouse. We exist to solve the problems others can't—tackling complex legacy migrations, building AI-driven infrastructure, and securing mission-critical data.</p>
+            <p class="text-base text-gray-700 leading-relaxed">In a world of "off-the-shelf" solutions, we are the architects of custom advantage. We work alongside our clients as one team with a shared ambition: to achieve extraordinary results, outperform the competition, and redefine industries.</p>
+          </div>
+
+          <!-- Our Philosophy -->
+          <div>
+            <h3 class="text-xl font-semibold mb-3 text-blue-600">Our Philosophy: The Prodesk Standard</h3>
+            <p class="text-base text-gray-700 leading-relaxed mb-4">In a world of hype, we believe in the code. We adhere to three core principles that define every project we deliver:</p>
+            
+            <ul class="space-y-4">
+              <li class="bg-gray-50 p-4 rounded-lg shadow-sm philosophy-card text-left">
+                <h4 class="font-bold text-gray-900 mb-1">1. PRECISION</h4>
+                <p class="text-gray-700 text-sm">We measure twice, cut once. In enterprise software, "good enough" is a failure. We adhere to rigorous engineering standards that prioritize stability, security, and scalability from the very first line of code.</p>
+              </li>
+              <li class="bg-gray-50 p-4 rounded-lg shadow-sm philosophy-card text-left">
+                <h4 class="font-bold text-gray-900 mb-1">2. VELOCITY</h4>
+                <p class="text-gray-700 text-sm">Speed matters, but direction matters more. Our agile workflows are designed to pivot instantly as markets shift, ensuring you launch products that are relevant today, not yesterday.</p>
+              </li>
+              <li class="bg-gray-50 p-4 rounded-lg shadow-sm philosophy-card text-left">
+                <h4 class="font-bold text-gray-900 mb-1">3. TRANSPARENCY</h4>
+                <p class="text-gray-700 text-sm">We believe in radical honesty. No black boxes, no hidden costs, and no technical jargon designed to confuse. You see what we see, ensuring total alignment at every stage of the lifecycle.</p>
+              </li>
+            </ul>
+          </div>
+
+          <!-- Leadership Vision & Global Capabilities -->
+          <div class="grid grid-cols-1 md:grid-cols-2 gap-8 mt-8">
+            <div class="bg-blue-50 p-6 rounded-xl border border-blue-100 leadership-card text-left">
+              <h3 class="text-xl font-semibold mb-3 text-blue-600">Leadership Vision</h3>
+              <p class="text-sm italic text-gray-700 mb-4">"Technology is the great equalizer. In the modern economy, the size of your company matters less than the speed of your innovation. At Prodesk, our job is not just to build software; it is to provide you with the engine that drives that speed. We are committed to your success because your growth is our growth."</p>
+              <p class="font-bold text-gray-900">— Dr. Amit Maheshwari, Founder & CEO</p>
+            </div>
+            <div class="bg-blue-50 p-6 rounded-xl border border-blue-100 leadership-card text-left">
+              <h3 class="text-xl font-semibold mb-3 text-blue-600">Global Capabilities</h3>
+              <p class="text-sm text-gray-700">We operate around the clock and around the globe. With our headquarters in Noida and strategic delivery capabilities across the US, Europe, and APAC, our "Follow the Sun" model ensures that your project never sleeps. When your team logs off, ours logs on.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16 px-5 text-center bg-gray-50" aria-label="Our Services">
+      <h2 class="services-heading text-3xl font-bold text-gray-900 mb-10">Our Services</h2>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 max-w-5xl mx-auto">
+
+        <article class="service-card bg-white p-8 rounded-xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 text-gray-800">
+          <h3 class="text-xl font-semibold mb-2">SEO Optimization</h3>
+          <p class="text-sm text-gray-600">Rank higher on search engines with our expert SEO strategies.</p>
+        </article>
+
+        <article class="service-card bg-white p-8 rounded-xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 text-gray-800">
+          <h3 class="text-xl font-semibold mb-2">Web Development</h3>
+          <p class="text-sm text-gray-600">Beautiful, responsive websites built with modern technologies.</p>
+        </article>
+
+        <article class="service-card bg-white p-8 rounded-xl shadow-md hover:shadow-2xl hover:-translate-y-2 transition-all duration-300 text-gray-800">
+          <h3 class="text-xl font-semibold mb-2">Digital Marketing</h3>
+          <p class="text-sm text-gray-600">Grow your brand with data-driven marketing campaigns.</p>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer id="footer" class="footer bg-gray-900 text-white py-6 px-6 md:px-10" role="contentinfo">
+    <div class="flex flex-col md:flex-row justify-between items-center gap-4">
+
+      <div class="flex items-center gap-4" role="list" aria-label="Social media links">
+        <a href="https://www.linkedin.com/company/prodesk-it/posts/?feedView=all" target="_blank" rel="noopener noreferrer" role="listitem" aria-label="Visit Prodesk IT on LinkedIn">
+          <img src="assets/images/linkedin.png" alt="LinkedIn" width="24" height="24" class="w-6 h-6 hover:scale-125 transition-transform duration-300" />
+        </a>
+
+        <a href="mailto:info@prodesk.in" role="listitem" aria-label="Send email to Prodesk IT">
+          <img src="assets/images/email.png" alt="Email" width="24" height="24" class="w-6 h-6 hover:scale-125 transition-transform duration-300" />
+        </a>
+
+        <a href="tel:+918851407750" role="listitem" aria-label="Call Prodesk IT">
+          <img src="assets/images/phone.png" alt="Phone" width="24" height="24" class="w-6 h-6 hover:scale-125 transition-transform duration-300" />
+        </a>
+      </div>
+
+      <p class="text-sm text-gray-400">&copy; 2026 Prodesk IT. All rights reserved.</p>
+
+    </div>
+  </footer>
+
+  <script>
+    // Dark mode toggle
+    const toggle = document.getElementById("themeToggle");
+    toggle.addEventListener("change", () => {
+      document.body.classList.toggle("dark-mode");
+    });
+
+    // Hamburger menu toggle
+    const hamburgerBtn = document.getElementById("hamburgerBtn");
+    const navRight = document.getElementById("navRight");
+
+    hamburgerBtn.addEventListener("click", () => {
+      const isOpen = navRight.classList.toggle("nav-open");
+      hamburgerBtn.classList.toggle("active");
+      hamburgerBtn.setAttribute("aria-expanded", isOpen);
+    });
+
+    // Close menu when a link is clicked
+    document.querySelectorAll(".nav-links a").forEach(link => {
+      link.addEventListener("click", () => {
+        navRight.classList.remove("nav-open");
+        hamburgerBtn.classList.remove("active");
+        hamburgerBtn.setAttribute("aria-expanded", "false");
+      });
+    });
+
+    // Contact Us icon lift animation
+    const contactLinks = document.querySelectorAll('a[href="#footer"]');
+    const footerIcons = document.querySelectorAll('.footer img');
+
+    contactLinks.forEach(link => {
+      link.addEventListener('click', () => {
+        // Remove existing animation if it's currently running
+        footerIcons.forEach(icon => icon.classList.remove('animate-icon-lift'));
+        
+        // Trigger DOM reflow to restart animation
+        void document.body.offsetWidth;
+
+        // Apply animation class to "lift" icons
+        footerIcons.forEach(icon => icon.classList.add('animate-icon-lift'));
+
+        // Animation duration matches via CSS (2.5 seconds)
+        setTimeout(() => {
+          footerIcons.forEach(icon => icon.classList.remove('animate-icon-lift'));
+        }, 3000);
+      });
+    });
+  </script>
+
+</body>
+
+</html>
